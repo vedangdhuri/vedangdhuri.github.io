@@ -14,6 +14,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // 👇 change this to your repo name
-  base: "/portfolio-main/",
+  base: "/portfolio-main/", // 👈 must match your repo name exactly
 });
