@@ -4,7 +4,7 @@
 // import { Toaster } from "@/components/ui/toaster";
 
 import { Navbar } from "./components/Navbar";
-import { ThemeToggle } from "./components/ThemeToggle";
+// import { ThemeToggle } from "./components/ThemeToggle";
 import { StarBackground } from "@/components/StarBackground";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
@@ -28,7 +28,7 @@ function App() {
     <>
       <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
             {/* Theme Toggle */}
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             {/* Background Effects */}
             <StarBackground />
       

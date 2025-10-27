@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle"; // 🔥 Added
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -8,6 +9,7 @@ const navItems = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
+  { name: <ThemeToggle /> }
 ];
 
 export const Navbar = () => {
@@ -16,26 +18,19 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    // main code
     <nav
       className={cn(
-        "fixed w-full z-40 transition-all duration-300 ",
-        isScrolled 
-        // ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5" 
-        ? "py-5 backdrop-blur-md border-b border-gray-700/40" 
-        : "py-5 bg-transparent border-transparent"
+        "fixed w-full z-40 transition-all duration-300",
+        isScrolled
+          ? "py-5 backdrop-blur-md border-b border-gray-700/40"
+          : "py-5 bg-transparent border-transparent"
       )}
     >
       <div className="container flex items-center justify-between">
@@ -61,25 +56,33 @@ export const Navbar = () => {
             </a>
           ))}
         </div>
-        {/* mobile nav */}
 
-        <button
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50"
-          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
-        </button>
+        {/* ✨ Moved ThemeToggle here so it stays visible on all devices */}
+        <div className="flex items-center space-x-3">
+          <button
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            className="md:hidden p-2 text-foreground z-50"
+            aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+          </button>
+        </div>
 
+        {/* mobile nav overlay */}
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           )}
         >
+          {/* 🔥 Added ThemeToggle inside overlay too (top-right) */}
+          {/* <div className="absolute top-5 right-5">
+            <ThemeToggle />
+          </div> */}
+
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (
               <a
