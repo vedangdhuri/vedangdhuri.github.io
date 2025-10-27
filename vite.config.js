@@ -6,8 +6,8 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // base: "/portfolio-main",
-  base: process.env.VITE_BASE_PATH || "/portfolio-main",
+  base: "/portfolio-main",
+  // base: process.env.VITE_BASE_PATH || "/portfolio-main",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
