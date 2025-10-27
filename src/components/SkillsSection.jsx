@@ -4,12 +4,15 @@ import { cn } from "@/lib/utils";
 const skill = [
   // Frontend
   { name: "HTML/CSS", category: "frontend", src:"https://i.icoziv.workers.dev/icons?i=html,css", alt:"HTML/CSS"},
+  { name: "BootStrap", category: "frontend", src:"https://i.icoziv.workers.dev/icons?i=bootstrap", alt:"BootStrap"},
   { name: "JavaScript", category: "frontend", src:"https://i.icoziv.workers.dev/icons?i=js", alt:"JavaScript"},
   { name: "React", category: "frontend", src:"https://i.icoziv.workers.dev/icons?i=reactjs", alt:"React" },
   { name: "Tailwind CSS", category: "frontend", src:"https://i.icoziv.workers.dev/icons?i=tailwindcss", alt:"TailWind CSS" },
 
 
   // Backend
+  { name: "C", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=c", alt:"C" },
+  { name: "C++", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=cpp", alt:"C++" },
   { name: "Python", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=python", alt:"Python" },
   { name: "Java", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=java", alt:"Java" },
   { name: "Node.js", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=nodejs", alt:"NodeJS" },
@@ -22,6 +25,7 @@ const skill = [
   { name: "VS Code", category: "tools", src:"https://i.icoziv.workers.dev/icons?i=vscode", alt:"VS Code" },
   { name: "Adobe Photoshop", category: "tools", src:"https://i.icoziv.workers.dev/icons?i=adobephotoshop", alt:"Adobe PhotoShop" },
   { name: "Adobe Premiere Pro", category: "tools", src:"https://i.icoziv.workers.dev/icons?i=adobepremiere", alt:"Adobe Premiere Pro" },
+  { name: "Adobe Lightroom", category: "tools", src:"https://i.icoziv.workers.dev/icons?i=adobelightroom", alt:"Adobe Lightroom" },
 ];
 
 

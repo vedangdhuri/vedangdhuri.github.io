@@ -38,6 +38,7 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Featured
           <span className="text-blue-400 transition delay-100 easy-in-out hover:translate-y-1 hover:scale=110 hover:text-indigo-500"> Projects </span>
         </h2>
 

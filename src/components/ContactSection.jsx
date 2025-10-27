@@ -10,6 +10,8 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import { Discord } from "react-bootstrap-icons";
+// import { validateEmail } from "react-email-validator";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -175,6 +177,14 @@ export const ContactSection = () => {
                 >
                   <Github />
                 </a>
+
+                <a
+                  className="transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:text-blue-400"
+                  href="https://discord.com/users/767682446959050753"
+                  target="_blank"
+                >
+                  <Discord className="h-6 w-6" />
+                </a>
               </div>
             </div>
           </div>
@@ -198,7 +208,7 @@ export const ContactSection = () => {
                   required
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
                   placeholder="First Name..."
                 />
               </div>
@@ -217,7 +227,7 @@ export const ContactSection = () => {
                   required
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
                   placeholder="Last Name..."
                 />
               </div>
@@ -236,7 +246,7 @@ export const ContactSection = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
                   placeholder="youremail@gmail.com"
                 />
               </div>
@@ -254,7 +264,7 @@ export const ContactSection = () => {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+                  className="w-full px-4 py-3 rounded-md border border-input placeholder-gray-500 bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
