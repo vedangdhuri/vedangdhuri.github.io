@@ -11,11 +11,11 @@ const skill = [
 
 
   // Backend
-  { name: "C", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=c", alt:"C" },
   { name: "C++", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=cpp", alt:"C++" },
   { name: "Python", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=python", alt:"Python" },
   { name: "Java", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=java", alt:"Java" },
   { name: "Node.js", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=nodejs", alt:"NodeJS" },
+  { name: "Express.js", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=expressjs", alt:"ExpressJS" },
   { name: "MongoDB", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=mongodb", alt:"MongoDB" },
   { name: "MySQL", category: "backend", src:"https://i.icoziv.workers.dev/icons?i=mysql", alt:"MySQL" },
 

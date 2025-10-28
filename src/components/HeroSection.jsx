@@ -9,7 +9,7 @@ export const HeroSection = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Computer Engineer", "UI/UX Designer", "Also Love Gaming"];
+  const toRotate = ["Computer Engineer", "UI/UX Designer", "Photo Editor", "Also Love Gaming"];
   const period = 2000;
 
   useEffect(() => {
