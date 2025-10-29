@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "AES Encryption and Decryption in Java",
     description:
       "A Java application that uses AES for secure text encryption and decryption, demonstrating symmetric key cryptography to protect sensitive information.",
     image: "https://github.com/vedangdhuri/images/blob/main/aes-edcryption.png?raw=true",

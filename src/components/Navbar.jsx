@@ -78,7 +78,7 @@ export const Navbar = () => {
               : "opacity-0 pointer-events-none"
           )}
         >
-          {/* 🔥 Added ThemeToggle inside overlay too (top-right) */}
+          {/* Added ThemeToggle inside overlay too (top-right) */}
           {/* <div className="absolute top-5 right-5">
             <ThemeToggle />
           </div> */}

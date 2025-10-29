@@ -9,7 +9,7 @@ export const HeroSection = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Computer Engineer", "UI/UX Designer", "Photo Editor", "Also Love Gaming"];
+  const toRotate = ["Computer Engineer", "UI/UX Designer", "Photo Editor", "Gamer"];
   const period = 2000;
 
   useEffect(() => {
@@ -55,20 +55,23 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, Im</span>
+          <h1 className="text-4xl md:text-7xl font-bold tracking-tight">
+            <span className="opacity-0 animate-fade-in"> It&apos;s</span>
             <span className="text-blue-400 opacity-0 animate-fade-in-delay-1 transition delay-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500">
               {" "}
               Vedang
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
-              Dhuri,
-            </span>
-            <span>
-              <span className="text-4xl md:text-6xl font-bold tracking-tight text-indigo-400 animate-fade-in-delay-2"> {text}</span>
+              Dhuri
             </span>
           </h1>
+          <div>
+            <span className="text-4xl md:text-5xl font-bold tracking-tight animate-fade-in-delay-2">
+              I&apos;m a
+              <span className="text-4xl md:text-5xl font-bold tracking-tight text-indigo-400 animate-fade-in-delay-2"> {text}</span>
+            </span>
+          </div>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#projects" className="cosmic-button bg-blue-400 font-bold transistion delay-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:shadow-[0px_0px_25px_0px_rgba(124,134,225,1)]">
