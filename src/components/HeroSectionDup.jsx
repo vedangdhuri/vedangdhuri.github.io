@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 export const HeroSection = () => {
-  const mainLogo = "https://github.com/vedangdhuri/portfolio/blob/main/src/assets/mainLogo.png?raw=true";
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -54,9 +54,6 @@ export const HeroSection = () => {
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
-        <div className="img-container w-80 h-80 sm:w-64 sm:h-64 md:w-90 md:h-90 rounded-full mx-auto mb-10">
-          <img src={mainLogo} alt="Portfolio Img" id="home-img" />
-        </div>
         <div className="space-y-6">
           <h1 className="text-4xl md:text-7xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> It&apos;s</span>

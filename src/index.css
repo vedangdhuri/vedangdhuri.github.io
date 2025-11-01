@@ -161,8 +161,8 @@
   text-align: center;
 }
 
-html,
-body {
+
+html, body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -172,15 +172,3 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.img-container img {
-  --box-color: #5995d2;
-  border-radius: 50%;
-  border: 2px;
-  box-shadow: 0 0 25px var(--box-color);
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-.img-container img:hover {
-  box-shadow: 0 0 50px var(--box-color), 0 0 80px var(--box-color);
-}
