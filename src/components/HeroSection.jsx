@@ -57,7 +57,7 @@ export const HeroSection = () => {
         <div className="space-y-6">
           <h1 className="text-4xl md:text-7xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> It&apos;s</span>
-            <span className="text-blue-400 opacity-0 animate-fade-in-delay-1 transition delay-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-indigo-500">
+            <span className="text-blue-400 opacity-0 animate-fade-in-delay-1 transition delay-150 ease-in-out hover:text-indigo-500">
               {" "}
               Vedang
             </span>
@@ -66,10 +66,10 @@ export const HeroSection = () => {
               Dhuri
             </span>
           </h1>
-          <div>
-            <span className="text-4xl md:text-5xl font-bold tracking-tight animate-fade-in-delay-2">
+          <div className="text-2xl md:text-5xl font-bold tracking-tight">
+            <span className="animate-fade-in-delay-2">
               I&apos;m a
-              <span className="text-4xl md:text-5xl font-bold tracking-tight text-indigo-400 animate-fade-in-delay-2"> {text}</span>
+              <span className="text-blue-400 animate-fade-in-delay-2 transition delay-150 ease-in-out hover:text-indigo-500"> {text}</span>
             </span>
           </div>
 
