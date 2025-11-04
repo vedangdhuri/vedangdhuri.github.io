@@ -105,7 +105,7 @@ export const ContactSection = () => {
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Get In{" "}
-          <span className="text-blue-400 transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:text-indigo-500">
+          <span className="text-blue-400 transition delay-100 ease-in-out hover:text-indigo-500">
             Touch
           </span>
         </h2>
@@ -208,7 +208,7 @@ export const ContactSection = () => {
                   required
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
                   placeholder="First Name..."
                 />
               </div>
@@ -227,7 +227,7 @@ export const ContactSection = () => {
                   required
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
                   placeholder="Last Name..."
                 />
               </div>
@@ -246,7 +246,7 @@ export const ContactSection = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary transition-all delay-50 ease-in-out hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
                   placeholder="youremail@gmail.com"
                 />
               </div>
@@ -264,7 +264,7 @@ export const ContactSection = () => {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-md border border-input placeholder-gray-500 bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none transition-all delay-50 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+                  className="w-full px-4 py-3 rounded-md border border-input placeholder-gray-500 bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none transition-all delay-50 ease-in-out hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
@@ -273,7 +273,7 @@ export const ContactSection = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button font-bold bg-blue-400 w-full flex items-center justify-center gap-2 transition delay-75 ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-indigo-500"
+                  "cosmic-button font-bold bg-blue-400 w-full flex items-center justify-center gap-2 transition delay-75 ease-in-out hover:bg-indigo-500"
                 )}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
