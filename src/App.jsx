@@ -13,28 +13,28 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-            
-            {/* Toaster */}
-            <Toaster />
-      
-            {/* Background Effects */}
-            <StarBackground />
-      
-            {/* Navbar */}
-            <Navbar />
-            
-            {/* Main Content */}
-            <main>
-              <HeroSection />
-              <AboutSection />
-              <SkillsSection />
-              <ProjectsSection />
-              <ContactSection />
-            </main>
-      
-            {/* Footer */}
-            <Footer />
-          </div>
+
+        {/* Toaster */}
+        <Toaster />
+
+        {/* Background Effects */}
+        <StarBackground />
+
+        {/* Navbar */}
+        <Navbar />
+
+        {/* Main Content */}
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <SkillsSection />
+          <ProjectsSection />
+          <ContactSection />
+        </main>
+
+        {/* Footer */}
+        <Footer />
+      </div>
     </>
   );
 }
