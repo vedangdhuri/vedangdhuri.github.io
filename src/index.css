@@ -172,3 +172,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+#homeImg img {
+  --blue-color: #51a2ff;
+  cursor: pointer;
+  box-shadow: 0 0 25px var(--blue-color);
+  transition: 0.4s ease-in-out;
+}
+
+#homeImg img:hover {
+  box-shadow: 0 0 50px var(--blue-color),
+              0 0 100px var(--blue-color);
+}

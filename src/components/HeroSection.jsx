@@ -1,6 +1,7 @@
 import { ArrowDown } from "lucide-react";
 import { useState } from "react";
 import { useEffect } from "react";
+import homeImg from "../assets/homeImg.png";
 
 export const HeroSection = () => {
 
@@ -54,9 +55,20 @@ export const HeroSection = () => {
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
+        
+        {/* Hero Image */}
+        <div id="homeImg" className="flex justify-center items-center mb-12 animate-fade-in">
+          <img
+            src={homeImg}
+            alt="Vedang Dhuri"
+            className="rounded-full transition-all duration-500 mx-auto w-[60vw] sm:w-[32vw] md:w-[27vw] lg:w-[24vw] xl:w-[23vw] 2xl:w-[22vw]"
+          />
+        </div>
+        
+        {/* Hero Text */}
         <div className="space-y-6">
           <h1 className="text-4xl md:text-7xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> It&apos;s</span>
+            <span className="opacity-0 animate-fade-in-delay-1"> It&apos;s</span>
             <span className="text-blue-400 opacity-0 animate-fade-in-delay-1 transition delay-150 ease-in-out hover:text-indigo-500">
               {" "}
               Vedang
@@ -69,12 +81,12 @@ export const HeroSection = () => {
           <div className="text-2xl md:text-5xl font-bold tracking-tight">
             <span className="animate-fade-in-delay-2">
               I&apos;m a
-              <span className="text-blue-400 animate-fade-in-delay-2 transition delay-150 ease-in-out hover:text-indigo-500"> {text}</span>
+              <span className="text-blue-400 animate-fade-in-delay-3 transition delay-150 ease-in-out hover:text-indigo-500"> {text}</span>
             </span>
           </div>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#projects" className="cosmic-button bg-blue-400 font-bold transistion delay-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:shadow-[0px_0px_25px_0px_rgba(124,134,225,1)]">
+            <a href="#projects" className="cosmic-button bg-blue-400 font-bold transistion delay-150 ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:shadow-[0px_0px_25px_0px_rgba(124,134,225,1)]">
               View My Work
             </a>
           </div>
