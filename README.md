@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff" alt="" />
     <img src="https://img.shields.io/badge/esbuild-FFCF00.svg?style=flat&logo=esbuild&logoColor=black" alt="" />
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="" />
-    <img src="https://img.shields.io/badge/React%20Bootstrap-41E0FD.svg?style=flat&logo=React-Bootstrap&logoColor=black" alt="" />
+    <img src="https://img.shields.io/badge/React%20Bootstrap-41E0FD.svg?style=flat&logo=React-Bootstrap&logoColor=black" alt="" /> <br/>
     <img src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" alt="" />
     <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff" alt="" />
     <img src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=white" alt="" />
