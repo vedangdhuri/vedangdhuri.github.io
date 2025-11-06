@@ -55,16 +55,20 @@ export const HeroSection = () => {
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
-        
+
         {/* Hero Image */}
-        <div id="homeImg" className="flex justify-center items-center mb-12 animate-fade-in">
+        <div id="homeImg" className="inline-flex justify-center items-center animate-fade-in mb-10">
           <img
             src={homeImg}
             alt="Vedang Dhuri"
             className="rounded-full transition-all duration-500 mx-auto w-[60vw] sm:w-[32vw] md:w-[27vw] lg:w-[24vw] xl:w-[23vw] 2xl:w-[22vw]"
           />
+          {/* Signature */}
+          <div className="text-3xl mx-auto md:text-5xl absolute bottom-3 opacity-70">
+            <span id="signature">Vedang Dhuri</span>
+          </div>
         </div>
-        
+
         {/* Hero Text */}
         <div className="space-y-6">
           <h1 className="text-4xl md:text-7xl font-bold tracking-tight">
