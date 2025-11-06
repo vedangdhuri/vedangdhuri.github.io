@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @import url('https://fonts.cdnfonts.com/css/bastliga-one');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
