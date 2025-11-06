@@ -64,9 +64,9 @@ export const HeroSection = () => {
             className="rounded-full transition-all duration-500 mx-auto w-[60vw] sm:w-[32vw] md:w-[27vw] lg:w-[24vw] xl:w-[23vw] 2xl:w-[22vw]"
           />
           {/* Signature */}
-          <div className="text-3xl mx-auto md:text-5xl absolute bottom-3 opacity-70">
+          {/* <div className="text-3xl mx-auto md:text-5xl absolute bottom-3 opacity-70">
             <span id="signature">Vedang Dhuri</span>
-          </div>
+          </div> */}
         </div>
 
         {/* Hero Text */}
