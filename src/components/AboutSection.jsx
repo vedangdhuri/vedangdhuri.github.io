@@ -17,7 +17,10 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground ">
-              As a 3rd-year Computer Engineering student under MSBTE (Batch 2025–26), I’m passionate about building user-friendly designs and solving real-world problems through code. With hands-on experience in Web Development, IoT, Python, React.js, and UI/UX design, I enjoy transforming creative ideas into functional digital experiences.
+              As a 3rd-year Computer Engineering student under MSBTE (Batch 2025–26), I’m passionate about
+              building user-friendly designs and solving real-world problems through code. With hands-on
+              experience in Web Development, IoT, Python, React.js, and UI/UX design, I enjoy transforming
+              creative ideas into functional digital experiences.
             </p>
 
             <p className="text-muted-foreground">
