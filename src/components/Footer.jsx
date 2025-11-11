@@ -5,9 +5,9 @@ export const Footer = () => {
   return (
     <footer className="mx-auto py-60 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-wrap items-center justify-between">
       {/* Social icons */}
-      <div className="absolute left-1/2 -translate-x-1/2 flex mt-15">
+      <div className="absolute left-1/2 -translate-x-1/2 flex mt-15 w-full justify-center">
         <a href="#hero">
-          <h2 className="text-4xl md:text-6xl font-medium tracking-tight transition delay-100 ease-in-out hover:text-blue-400">VEDANG DHURI</h2>
+          <h2 className="font-medium tracking-tight transition delay-100 ease-in-out text-5xl md:text-6xl hover:text-blue-400">VEDANG DHURI</h2>
         </a>
       </div>
       <div className="absolute left-1/2 -translate-x-1/2 flex mt-50 space-x-8">

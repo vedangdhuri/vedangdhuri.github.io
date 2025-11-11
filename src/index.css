@@ -181,7 +181,6 @@ body::-webkit-scrollbar {
 
 #homeImg img {
   --blue-color: #51a2ff;
-  cursor: pointer;
   box-shadow: 0 0 25px var(--blue-color);
   transition: 0.4s ease-in-out;
 }

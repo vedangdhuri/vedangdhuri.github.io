@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@cursorify/react": "^0.0.43",
     "@radix-ui/react-toast": "^1.2.15",
     "@tailwindcss/vite": "^4.1.16",
     "bootstrap": "^5.3.8",
@@ -20,9 +21,11 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gh-pages": "^6.3.0",
+    "gsap": "^3.13.0",
     "jsonfile": "^6.2.0",
     "lucide-react": "^0.501.0",
     "moment": "^2.30.1",
+    "motion": "^12.23.24",
     "random": "^5.4.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.10",
