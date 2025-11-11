@@ -1,9 +1,18 @@
 import { ArrowUp } from "lucide-react";
 import { Instagram, Linkedin, Facebook, Github } from "lucide-react";
 import { Discord } from "react-bootstrap-icons";
+
+const navItems = [
+  { name: "Home", href: "#hero" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
+];
+
 export const Footer = () => {
   return (
-    <footer className="mx-auto py-60 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-wrap items-center justify-between">
+    <footer className="mx-auto py-90 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-wrap items-center justify-between">
       {/* Social icons */}
       <div className="absolute left-1/2 -translate-x-1/2 flex mt-15 w-full justify-center">
         <a href="#hero">
@@ -38,7 +47,19 @@ export const Footer = () => {
         </a>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2 flex mt-80">
+      <div className="flex space-x-8 absolute left-1/2 -translate-x-1/2 mt-80">
+        {navItems.map((item, key) => (
+          <a 
+          key={key}
+          href={item.href}
+          className="text-foreground/80 hover:text-blue-400 transition-colors duration-300 font-bold"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+
+      <div className="absolute left-1/2 -translate-x-1/2 flex mt-110">
         <p className="text-sm text-muted-foreground">
         {" "}
         &copy; {new Date().getFullYear()} Vedang Dhuri. All rights reserved.
@@ -48,7 +69,7 @@ export const Footer = () => {
       <div className="ml-auto">
         <a
           href="#hero"
-          className="absolute right-6 top-1/2 -translate-y-1/2 p-3 rounded-full bg-blue-400/10 transition-colors items-end justify-center hover:scale-110 hover:text-blue-400/30"
+          className="absolute right-6 top-2/3 -translate-y-1/2 p-3 rounded-full bg-blue-400/10 transition-colors items-end justify-center hover:scale-110 hover:text-blue-400/30"
         >
           <ArrowUp size={20} />
         </a>
