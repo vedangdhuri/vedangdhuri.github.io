@@ -8,6 +8,12 @@ const projects = [
     description: "A Multi-Stakeholder Crime Reporting, Monitoring & Real-Time Urban Safety Management Platform.",
     image: "https://github.com/vedangdhuri/images/blob/main/safecityhub.png?raw=true",
     tags: ["HTML", "CSS", "BootStrap", "Python", "Django", "MySQL"],
+    src: ["https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white", 
+          "https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff", 
+          "https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff", 
+          "https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff", 
+          "https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white", 
+          "https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff"],
     // demoUrl: "#",
     githubUrl: "https://github.com/vedangdhuri/SafeCity-Hub",
   },
@@ -18,6 +24,9 @@ const projects = [
       "A responsive To-Do List app built with React.js that helps users efficiently organize tasks with an intuitive interface for adding, editing, deleting, and marking tasks as completed.",
     image: "https://github.com/vedangdhuri/images/blob/main/to_do_list_using_react.png?raw=true",
     tags: ["React", "JavaScript", "Vite"],
+    src: ["https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB", 
+          "https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000", 
+          "https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff"],
     // demoUrl: "#",
     githubUrl: "https://github.com/vedangdhuri/To-Do-List-Using-REACT",
   },
@@ -28,6 +37,7 @@ const projects = [
       "A Java application that uses AES for secure text encryption and decryption, demonstrating symmetric key cryptography to protect sensitive information.",
     image: "https://github.com/vedangdhuri/images/blob/main/aes-edcryption.png?raw=true",
     tags: ["Java"],
+    src: ["https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white"],
     // demoUrl: "#",
     githubUrl: "https://github.com/vedangdhuri/AES-Encryption-Decryption-Using-Java",
   },
@@ -59,19 +69,21 @@ export const ProjectsSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-75"
                 />
               </div>
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="px-2 py-1 text-xs font-medium border rounded-full bg-gray-200 text-gray-800"
-                    >
-                      {tag}
-                    </span>
+                  {project.src.map((src, index, tag) => (
+                    // <span
+                    //   key={index}
+                    //   className="px-2 py-1 text-xs font-medium border rounded-full bg-gray-200 text-gray-800"
+                    // >
+                    //   {tag}
+                    // </span>
+                    <img key={index} src={src} alt={tag}/> 
+                    // alt={project.tags[index]}
                   ))}
                 </div>
 
