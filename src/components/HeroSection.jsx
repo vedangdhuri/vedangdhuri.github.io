@@ -99,12 +99,12 @@ export const HeroSection = () => {
 
       <div className="scrolldown">
         <div className="absolute bottom-8 left-2/5 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-          <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
-          <ArrowDown className="h-5 w-5 text-blue-400" />
+          <span className="text-sm mr-65 text-muted-foreground mb-2"> Scroll </span>
+          <ArrowDown className="h-5 w-5 mr-65 text-blue-400" />
         </div>
         <div className="absolute bottom-8 left-3/5 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-          <span className="text-sm text-muted-foreground mb-2"> Down </span>
-          <ArrowDown className="h-5 w-5 text-blue-400" />
+          <span className="text-sm ml-65 text-muted-foreground mb-2"> Down </span>
+          <ArrowDown className="h-5 w-5 ml-65 text-blue-400" />
         </div>
       </div>
     </section>
