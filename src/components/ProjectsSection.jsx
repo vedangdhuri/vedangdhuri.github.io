@@ -75,15 +75,14 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.src.map((src, index, tag) => (
+                  {project.src.map((src, index) => (
                     // <span
                     //   key={index}
                     //   className="px-2 py-1 text-xs font-medium border rounded-full bg-gray-200 text-gray-800"
                     // >
                     //   {tag}
                     // </span>
-                    <img key={index} src={src} alt={tag}/> 
-                    // alt={project.tags[index]}
+                    <img key={index} src={src} alt={project.tags[index]}/> 
                   ))}
                 </div>
 
