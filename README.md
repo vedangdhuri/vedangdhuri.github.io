@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/github/last-commit/vedangdhuri/vedangdhuri.github.io?style=flat&logo=git&logoColor=white&color=0080ff" alt=""/>
     <img src="https://img.shields.io/github/languages/top/vedangdhuri/vedangdhuri.github.io?style=flat&color=0080ff" alt=""/>
     <img src="https://img.shields.io/github/languages/count/vedangdhuri/vedangdhuri.github.io?style=flat&color=0080ff" alt=""/>
-    <a href="https://vedangdhuri.github.io/"><img src="https://img.shields.io/badge/Visit_Site-Portfolio-blue?style=flat&color=0080ff" alt=""/></a>
+    <a href="https://vedangdhuri.github.io/"><img src="https://img.shields.io/badge/Visit_Site-Portfolio-blue?style=flat&color=0080ff" alt=""/></a> 
 </div>
 <h2 align="center">Built with the tools and technologies:</h2>
 <div align="center">
