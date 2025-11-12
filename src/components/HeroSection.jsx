@@ -1,7 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { useState } from "react";
 import { useEffect } from "react";
-import homeImg from "../assets/homeImg.png";
 
 export const HeroSection = () => {
 
@@ -59,7 +58,7 @@ export const HeroSection = () => {
         {/* Hero Image */}
         <div id="homeImg" className="inline-flex justify-center items-center animate-fade-in mb-10">
           <img
-            src={homeImg}
+            src="https://github.com/vedangdhuri/vedangdhuri.github.io/blob/main/src/assets/homeImg.png?raw=true"
             alt="Vedang Dhuri"
             className="rounded-full transition-all duration-500 mx-auto w-[60vw] sm:w-[32vw] md:w-[27vw] lg:w-[24vw] xl:w-[23vw] 2xl:w-[22vw]"
           />
