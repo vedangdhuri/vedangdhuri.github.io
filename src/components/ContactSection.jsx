@@ -22,6 +22,13 @@ export const ContactSection = () => {
     email: "",
     message: "",
   });
+  const socialLinks = [
+    { logo: <Linkedin />, href: "https://www.linkedin.com/in/vedang-dhuri-b03280348" },
+    { logo: <Instagram />, href: "https://www.instagram.com/vedang.dhuri.69" },
+    { logo: <Facebook />, href: "https://www.facebook.com/vedang.dhuri.69/" },
+    { logo: <Github />, href: "https://github.com/vedangdhuri" },
+    { logo: <Discord className="w-6 h-6" />, href: "https://discord.com/users/767682446959050753" },
+  ]
 
   // ⚙️ Replace this with your real Discord webhook URL
   const DISCORD_WEBHOOK_URL =
@@ -149,42 +156,14 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4 ">Connect With Me</h4>
               <div className="flex mt-8 space-x-8 justify-center ">
-                <a
-                  className="transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:text-blue-400"
-                  href="https://www.linkedin.com/in/vedang-dhuri-b03280348"
-                  target="_blank"
-                >
-                  <Linkedin />
-                </a>
-                <a
-                  className="transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:text-blue-400"
-                  href="https://www.instagram.com/vedang.dhuri.69"
-                  target="_blank"
-                >
-                  <Instagram />
-                </a>
-                <a
-                  className="transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:text-blue-400"
-                  href="https://www.facebook.com/vedang.dhuri.69/"
-                  target="_blank"
-                >
-                  <Facebook />
-                </a>
-                <a
-                  className="transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:text-blue-400"
-                  href="https://github.com/vedangdhuri"
-                  target="_blank"
-                >
-                  <Github />
-                </a>
-
-                <a
-                  className="transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:text-blue-400"
-                  href="https://discord.com/users/767682446959050753"
-                  target="_blank"
-                >
-                  <Discord className="h-6 w-6" />
-                </a>
+                {socialLinks.map((item) => (
+                  <a
+                    key={item}
+                    className="transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:text-blue-400"
+                    href={item.href} target="_blank">
+                    {item.logo}
+                  </a>
+                ))}
               </div>
             </div>
           </div>

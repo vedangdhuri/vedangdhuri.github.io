@@ -3,11 +3,11 @@ import { House, User, Brain, FolderOpen, MessageSquareText } from 'lucide-react'
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { logo: <House strokeWidth={2} size={20}/> , href:"#hero" },
-  { logo: <User strokeWidth={2} size={20}/> , href:"#about" },
-  { logo: <Brain strokeWidth={2} size={20}/> , href:"#skills" },
-  { logo: <FolderOpen strokeWidth={2} size={20}/> , href:"#projects" },
-  { logo: <MessageSquareText strokeWidth={2} size={20}/> , href:"#contact" },
+  { logo: <House strokeWidth={2} size={20} />, href: "#hero" },
+  { logo: <User strokeWidth={2} size={20} />, href: "#about" },
+  { logo: <Brain strokeWidth={2} size={20} />, href: "#skills" },
+  { logo: <FolderOpen strokeWidth={2} size={20} />, href: "#projects" },
+  { logo: <MessageSquareText strokeWidth={2} size={20} />, href: "#contact" },
 ];
 
 export const Navbar = () => {
@@ -22,7 +22,7 @@ export const Navbar = () => {
       // default or explicitly dark
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
-    } 
+    }
   }, []);
 
   return (
