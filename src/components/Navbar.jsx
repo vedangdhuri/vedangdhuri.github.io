@@ -27,7 +27,8 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="w-max z-2 fixed -translate-x-2/4 flex gap-[0.8rem] backdrop-blur-sm px-[1rem] py-[0.4rem] rounded-[3rem] left-2/4 bottom-8  shadow-[0px_0px_20px_-5px_rgba(81,_162,_255,_0.5)] animate-fade-in">
+      <nav className="w-max z-2 fixed bg-gray-700/10 -translate-x-2/4 flex gap-[0.8rem] backdrop-blur-sm px-[1rem] py-[0.4rem] rounded-[3rem] left-2/4 bottom-8 animate-fade-in">
+      {/* <nav className="w-max z-2 fixed -translate-x-2/4 flex gap-[0.8rem] backdrop-blur-sm px-[1rem] py-[0.4rem] rounded-[3rem] left-2/4 bottom-8 shadow-[0px_0px_20px_-5px_rgba(81,_162,_255,_0.5)] animate-fade-in"> */}
         <div className="flex gap-1">
           {navItems.map((item, key) => (
             <a

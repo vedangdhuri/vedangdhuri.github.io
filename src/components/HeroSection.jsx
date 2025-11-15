@@ -89,7 +89,7 @@ export const HeroSection = () => {
           </div>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#projects" className="cosmic-button bg-blue-400 font-bold transistion delay-150 ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:shadow-[0px_0px_25px_0px_rgba(124,134,225,1)]">
+            <a href="#projects" className="cosmic-button bg-blue-400 font-bold transistion delay-150 ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:shadow-[0px_0px_25px_0px_rgba(124,134,225,1)] ">
               View My Work
             </a>
           </div>

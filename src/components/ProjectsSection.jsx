@@ -1,5 +1,5 @@
 import { ArrowRight, Github, } from "lucide-react";
-// import { ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -8,12 +8,12 @@ const projects = [
     description: "A Multi-Stakeholder Crime Reporting, Monitoring & Real-Time Urban Safety Management Platform.",
     image: "https://github.com/vedangdhuri/images/blob/main/safecityhub.png?raw=true",
     tags: ["HTML", "CSS", "BootStrap", "Python", "Django", "MySQL"],
-    src: ["https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white", 
-          "https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff", 
-          "https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff", 
-          "https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff", 
-          "https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white", 
-          "https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff"],
+    src: ["https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white",
+      "https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff",
+      "https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff",
+      "https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff",
+      "https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white",
+      "https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff"],
     // demoUrl: "#",
     githubUrl: "https://github.com/vedangdhuri/SafeCity-Hub",
   },
@@ -24,10 +24,10 @@ const projects = [
       "A responsive To-Do List app built with React.js that helps users efficiently organize tasks with an intuitive interface for adding, editing, deleting, and marking tasks as completed.",
     image: "https://github.com/vedangdhuri/images/blob/main/to_do_list_using_react.png?raw=true",
     tags: ["React", "JavaScript", "Vite"],
-    src: ["https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB", 
-          "https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000", 
-          "https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff"],
-    // demoUrl: "#",
+    src: ["https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB",
+      "https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000",
+      "https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff"],
+    demoUrl: "https://to-do-list-using-react-vd.netlify.app/",
     githubUrl: "https://github.com/vedangdhuri/To-Do-List-Using-REACT",
   },
   {
@@ -39,6 +39,19 @@ const projects = [
     tags: ["Java"],
     src: ["https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white"],
     // demoUrl: "#",
+    githubUrl: "https://github.com/vedangdhuri/AES-Encryption-Decryption-Using-Java",
+  },
+  {
+    id: 4,
+    title: "MATCH MASTER GAME",
+    description:
+      "A fast and scalable memory-matching game built with React and Vite. Designed as a lightweight, maintainable foundation for interactive web apps.",
+    image: "https://github.com/vedangdhuri/images/blob/main/match-master-game.png?raw=true",
+    tags: ["React", "JavaScript", "Vite"],
+    src: ["https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB",
+      "https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000",
+      "https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff"],
+    demoUrl: "https://match-master-game.vercel.app/",
     githubUrl: "https://github.com/vedangdhuri/AES-Encryption-Decryption-Using-Java",
   },
 ];
@@ -63,7 +76,7 @@ export const ProjectsSection = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden card-hover transition delay-100 ease-in-out hover:translate-y-1 hover:scale-110 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
+              className="group bg-card rounded-lg overflow-hidden card-hover transition delay-100 ease-in-out hover:translate-y-1 hover:scale-101 hover:shadow-[0px_0px_15px_-4px_rgba(81,162,225,1)]"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -82,7 +95,7 @@ export const ProjectsSection = () => {
                     // >
                     //   {tag}
                     // </span>
-                    <img key={index} src={src} alt={project.tags[index]}/> 
+                    <img key={index} src={src} alt={project.tags[index]} />
                   ))}
                 </div>
 
@@ -93,13 +106,13 @@ export const ProjectsSection = () => {
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     {/* External Link */}
-                    {/* <a
+                    <a
                       href={project.demoUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
-                    </a> */}
+                    </a>
 
                     {/* GitHub Link */}
                     <a
