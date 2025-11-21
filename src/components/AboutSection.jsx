@@ -38,7 +38,7 @@ export const AboutSection = () => {
 
               {/* <a
                 href=""
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-blue-400/10 transition-colors duration-300"
               >
                 Download CV
               </a> */}
@@ -48,7 +48,7 @@ export const AboutSection = () => {
           <div className="grid grid-cols-1 gap-6">
             <div className="gradient-border p-6 card-hover transition delay-50 hover:shadow-[0px_0px_25px_0px_rgba(124,134,225,1)]">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
+                <div className="p-3 rounded-full bg-blue-400/10">
                   <Code className="h-7 w-7 text-blue-400" />
                 </div>
                 <div className="text-left">
@@ -62,7 +62,7 @@ export const AboutSection = () => {
             </div>
             <div className="gradient-border p-6 card-hover transition delay-50 hover:shadow-[0px_0px_25px_0px_rgba(124,134,225,1)]">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
+                <div className="p-3 rounded-full bg-blue-400/10">
                   <User className="h-7 w-7 text-blue-400" />
                 </div>
                 <div className="text-left">
@@ -76,7 +76,7 @@ export const AboutSection = () => {
             </div>
             {/* <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
+                <div className="p-3 rounded-full bg-blue-400/10">
                   <Briefcase className="h-7 w-7 text-primary" />
                 </div>
 
