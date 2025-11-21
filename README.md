@@ -51,9 +51,14 @@
 <pre><code>
 src/
 ├── assets/
-│   └── homeImg.png
+│   ├── font/
+│   │   └── BastligaOne.ttf
+│   └── img/
+│       ├──
+│       └── homeImg.png
 ├── components/
 │   ├── ui/
+│   │   ├── FlipWords.jsx
 │   │   ├── toast.jsx
 │   │   └── toaster.jsx
 │   ├── AboutSection.jsx
