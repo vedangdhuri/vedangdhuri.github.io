@@ -48,11 +48,25 @@ const projects = [
       "A fast and scalable memory-matching game built with React and Vite. Designed as a lightweight, maintainable foundation for interactive web apps.",
     image: "https://github.com/vedangdhuri/images/blob/main/match-master-game.png?raw=true",
     tags: ["React", "JavaScript", "Vite"],
-    src: ["https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB",
+    src: ["https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff",
       "https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000",
-      "https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff"],
+      "https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB"],
+
     demoUrl: "https://match-master-game.vercel.app/",
     githubUrl: "https://github.com/vedangdhuri/Match-Master-Game"
+  },
+  {
+    id: 5,
+    title: "Weather App",
+    description:
+      "Weather-App is a fast, modern React project built with Vite. It includes hot module replacement, ESLint, and support for TypeScript and the React compiler, providing a solid foundation for building high-performance, maintainable weather applications.",
+    image: "https://github.com/vedangdhuri/images/blob/main/weather-app.jpg?raw=true",
+    tags: ["JavaScript", "Vite", "React"],
+    src: ["https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000",
+      "https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff",
+      "https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB"],
+    demoUrl: "https://weather-app-vd69.netlify.app",
+    githubUrl: "https://github.com/vedangdhuri/Weather-App"
   },
 ];
 
