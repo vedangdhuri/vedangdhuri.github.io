@@ -31,8 +31,7 @@ export const ContactSection = () => {
   ]
 
   // ⚙️ Replace this with your real Discord webhook URL
-  const DISCORD_WEBHOOK_URL =
-    "https://discord.com/api/webhooks/1425928175191588955/SUUYXU-qWCq22s20QzHesJRQEt7QNQgw9M5n7jd7QmoWQFkdoiauMSd3SWMhkHsac-ez";
+  const DISCORD_WEBHOOK_URL = import.meta.env.VITE_WEBHOOK_URL;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
