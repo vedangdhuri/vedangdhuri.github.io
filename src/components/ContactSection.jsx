@@ -10,7 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import { Discord } from "react-bootstrap-icons";
+import { Discord, TwitterX } from "react-bootstrap-icons";
 // import { validateEmail } from "react-email-validator";
 
 export const ContactSection = () => {
@@ -28,6 +28,7 @@ export const ContactSection = () => {
     { logo: <Facebook />, href: "https://www.facebook.com/vedang.dhuri.69/" },
     { logo: <Github />, href: "https://github.com/vedangdhuri" },
     { logo: <Discord className="w-6 h-6" />, href: "https://discord.com/users/767682446959050753" },
+    { logo: <TwitterX className="w-5 h-5"/>, href: "https://x.com/VedangDhuri69" },
   ]
 
   // ⚙️ Replace this with your real Discord webhook URL
