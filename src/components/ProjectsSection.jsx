@@ -1,5 +1,7 @@
 import { ArrowRight, Github, } from "lucide-react";
 import { ExternalLink } from "lucide-react";
+import ase from "../assets/img/aes.png";
+
 
 const projects = [
   {
@@ -35,7 +37,7 @@ const projects = [
     title: "AES Encryption and Decryption in Java",
     description:
       "A Java application that uses AES for secure text encryption and decryption, demonstrating symmetric key cryptography to protect sensitive information.",
-    image: "https://github.com/vedangdhuri/images/blob/main/aes-edcryption.png?raw=true",
+    image: {ase},
     tags: ["Java"],
     src: ["https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white"],
     // demoUrl: "#",
