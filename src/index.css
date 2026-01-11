@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-
-@font-face {
-  font-family: Bastliga;
-  src: url('./assets/font/BastligaOne.ttf');
-  font-weight: 400;
-}
-
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
@@ -177,19 +170,4 @@ html, body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
-}
-
-#homeImg img {
-  --blue-color: #51a2ff;
-  box-shadow: 0 0 25px var(--blue-color);
-  transition: 0.4s ease-in-out;
-}
-
-#homeImg img:hover {
-  box-shadow: 0 0 50px var(--blue-color),
-              0 0 70px var(--blue-color);
-}
-
-#signature {
-  font-family: 'Bastliga', sans-serif;
 }
